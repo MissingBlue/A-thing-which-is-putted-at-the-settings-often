@@ -23,11 +23,17 @@
 	--switch-outline-color: rgba(0,0,0,calc(1/3));
 	--switch-outline-width: 1px;
 	
+	--switch-move-speed-active: .1s;
+	--switch-move-timing-function-active: ease-out;
+	--switch-move-delay-active: 0s;
+	--switch-move-timing-function-inactive: ease-in;
+	
 	background-color: var(--outer-background-color);
 	border: var(--outer-border-width) solid var(--primary-color);
 	border-radius: var(--outer-height);
 	box-shadow:  0 0 0 var(--outer-outline-width) var(--outer-outline-color);
 	display: flex;
+	position: relative;
 	height: var(--outer-height);
 	width: var(--outer-width);
 	
@@ -40,13 +46,29 @@
 	box-sizing: border-box;
 	content: "";
 	height: var(--switch-size);
+	left: 0;
+	position: absolute;
+	top: 0;
 	width: var(--switch-size);
+	
+	transition:	left
+					var(--switch-move-speed-active)
+					var(--switch-move-timing-function-active)
+					var(--switch-move-delay-active);
 	
 }
 .slider > input:checked + label {
 	
 	--outer-background-color: var(--active-color);
 	
-	justify-content: flex-end;
+}
+.slider > input:checked + label::before {
+	
+	left: calc(100% - var(--switch-size));
+	
+	transition:	left
+					var(--switch-move-speed-inactive, var(--switch-move-speed-active))
+					var(--switch-move-timing-function-inactive, var(--switch-move-timing-function-active))
+					var(--switch-move-delay-inactive, var(--switch-move-delay-active));
 	
 }
