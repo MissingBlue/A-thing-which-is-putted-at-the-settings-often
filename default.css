@@ -27,11 +27,11 @@
 	--label-background-color: var(--inactive-color);
 	--label-border-color: var(--primary-color);
 	--label-border-radius: var(--label-height);
-	--label-box-shadow: 0 0 0 var(--outer-outline-border-width) var(--outer-outline-color);
+	--label-box-shadow: 0 0 0 var(--outer-outline-width) var(--outer-outline-color);
 	--label-justify-content: flex-start;
 	
 	--label-before-background-color: var(--primary-color);
-	--label-before-box-shadow: 0 0 0 var(--switch-outline-border-width) var(--switch-outline-color) inset;
+	--label-before-box-shadow: 0 0 0 var(--switch-outline-width) var(--switch-outline-color) inset;
 	
 	align-items: center;
 	background-color: var(--label-background-color);
