@@ -29,6 +29,11 @@
 	width: var(--outer-width);
 	
 }
+.slider > input:checked + label {
+	
+	--outer-background-color: var(--active-color);
+	
+}
 .slider > label::before {
 	
 	--switch-size: var(--outer-height);
@@ -55,11 +60,6 @@
 					var(--switch-move-speed-active)
 					var(--switch-move-timing-function-active)
 					var(--switch-move-delay-active);
-	
-}
-.slider > input:checked + label {
-	
-	--outer-background-color: var(--active-color);
 	
 }
 .slider > input:checked + label::before {
