@@ -12,10 +12,10 @@
 	--inactive-color: rgba(144,144,144,1);
 	
 	--outer-outline-color: rgba(0,0,0,calc(1/3));
-	--outer-outline-border-width: 1px;
+	--outer-outline-width: 1px;
 	
 	--switch-outline-color: rgba(0,0,0,calc(1/3));
-	--switch-outline-border-width: 1px;
+	--switch-outline-width: 1px;
 	
 	--label-height: 1.1rem;
 	--label-width: 2rem;
