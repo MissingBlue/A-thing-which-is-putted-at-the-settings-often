@@ -1,0 +1,45 @@
+.slider {
+}
+.slider > input {
+  
+	display: none;
+  
+}
+.slider > label {
+	
+	--label-height: 1.2rem;
+	--label-width: 2rem;
+	--label-border-radius: var(--label-height);
+	--label-background-color: rgba(240,240,240,1);
+	
+	--label-before-background-color: rgba(144,144,144,1);
+	
+	align-items: center;
+	background-color: var(--label-background-color);
+	border-radius: var(--label-border-radius);
+	box-sizing: border-box;
+	display: flex;
+	height: var(--label-height);
+	width: var(--label-width);
+	
+}
+.slider > label::before {
+	
+	--label-before-size: .9rem;
+	
+	background-color: var(--before-bg-color);
+	border-radius: 10000rem;
+	box-sizing: border-box;
+	content: "";
+	height: var(--label-before-size);
+	margin: 0 .2rem;
+	width: var(--label-before-size);
+	
+}
+.slider > input:checked + label {
+	
+	--label-before-background-color: rgba(255,0,0,1);
+  
+	justify-content: flex-end;
+	
+}
