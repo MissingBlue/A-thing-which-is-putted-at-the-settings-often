@@ -51,13 +51,13 @@
 	position: absolute;
 	width: var(--switch-size);
 	
-	transition:	left var(--switch-move-speed-active) var(--switch-move-timing-function-active) var(--switch-move-delay-active);
+	transition: left var(--switch-move-speed-active) var(--switch-move-timing-function-active) var(--switch-move-delay-active);
 	
 }
 .slider > input:checked + label::before {
 	
 	left: calc(100% - var(--switch-size) * 2);
 	
-	transition:	left var(--switch-move-speed-inactive, var(--switch-move-speed-active)) var(--switch-move-timing-function-inactive, var(--switch-move-timing-function-active)) var(--switch-move-delay-inactive, var(--switch-move-delay-active));
+	transition: left var(--switch-move-speed-inactive, var(--switch-move-speed-active)) var(--switch-move-timing-function-inactive, var(--switch-move-timing-function-active)) var(--switch-move-delay-inactive, var(--switch-move-delay-active));
 	
 }
