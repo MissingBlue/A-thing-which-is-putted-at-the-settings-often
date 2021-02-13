@@ -7,18 +7,37 @@
 }
 .slider > label {
 	
-	--label-height: 1.2rem;
+	--primary-color: rgba(240,240,240,1);
+	--active-color: rgba(255,0,0,1);
+	--inactive-color: rgba(144,144,144,1);
+	
+	--outer-outline-color: rgba(0,0,0,calc(1/3));
+	--outer-outline-border-width: 1px;
+	
+	--switch-outline-color: rgba(0,0,0,calc(1/3));
+	--switch-outline-border-width: 1px;
+	
+	--label-height: 1.1rem;
 	--label-width: 2rem;
+	--label-border-width: .2rem;
+	
+	--label-before-size: var(--label-height);
+	
+	
+	--label-background-color: var(--inactive-color);
+	--label-border-color: var(--primary-color);
 	--label-border-radius: var(--label-height);
-	--label-background-color: rgba(240,240,240,1);
+	--label-box-shadow: 0 0 0 var(--outer-outline-border-width) var(--outer-outline-color);
 	--label-justify-content: flex-start;
 	
-	--label-before-background-color: rgba(144,144,144,1);
+	--label-before-background-color: var(--primary-color);
+	--label-before-box-shadow: 0 0 0 var(--switch-outline-border-width) var(--switch-outline-color) inset;
 	
 	align-items: center;
 	background-color: var(--label-background-color);
+	border: var(--label-border-width) solid var(--label-border-color);
 	border-radius: var(--label-border-radius);
-	box-sizing: border-box;
+	box-shadow: var(--label-box-shadow);
 	display: flex;
 	height: var(--label-height);
 	justify-content: var(--label-justify-content);
@@ -27,20 +46,18 @@
 }
 .slider > label::before {
 	
-	--label-before-size: .9rem;
-	
 	background-color: var(--label-before-background-color);
+	box-shadow: var(--label-before-box-shadow);
 	border-radius: 10000rem;
 	box-sizing: border-box;
 	content: "";
 	height: var(--label-before-size);
-	margin: 0 .2rem;
 	width: var(--label-before-size);
 	
 }
 .slider > input:checked + label {
 	
-	--label-before-background-color: rgba(255,0,0,1);
+	--label-background-color: var(--active-color);
 	--label-justify-content: flex-end;
 	
 }
