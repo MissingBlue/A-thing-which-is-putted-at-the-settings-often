@@ -36,7 +36,7 @@
 	
 	background-color: var(--primary-color);
 	box-shadow: 0 0 0 var(--switch-outline-width) var(--switch-outline-color) inset;
-	border-radius: 10000rem;
+	border-radius: 100%;
 	box-sizing: border-box;
 	content: "";
 	height: var(--switch-size);
