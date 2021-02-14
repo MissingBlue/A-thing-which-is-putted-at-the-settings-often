@@ -21,7 +21,7 @@
 	align-items: center;
 	border: var(--outer-border-width) solid var(--primary-color);
 	border-radius: var(--outer-height);
-	box-shadow:  0 0 0 var(--outer-outline-width) var(--outer-outline-color);
+	box-shadow: 0 0 0 var(--outer-outline-width) var(--outer-outline-color);
 	display: flex;
 	overflow: hidden;
 	position: relative;
