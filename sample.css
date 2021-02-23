@@ -1,0 +1,22 @@
+
+/*
+ *
+ *	This file is only for sample pages, not a requirement for using slider.css.
+ *
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.slider {
+	--slider-global-scale: 5;
+}
