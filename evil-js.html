@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample: Evil JavaScript version</title>
+		<link rel="stylesheet" href="default.css">
+		<link rel="stylesheet" href="sample.css">
+	<head>
+	<body>
+		<div class="slider"><input type="checkbox" id="sample-slider" onchange='document.querySelectorAll(`:not(.evil)[for="${this.id}"]`).forEach($=>$.classList.add("evil"));'><label for="sample-slider"></label></div>
+	</body>
+</html>
